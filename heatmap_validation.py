@@ -9,12 +9,10 @@ from connect4.connect_state import ConnectState
 from connect4.policy import Policy
 from connect4.utils import find_importable_classes
 
-
 def state_key(board, player: int) -> str:
     """Serializa (tablero, jugador) en un string"""
     flat = "".join(str(int(x)) for x in board.flatten())
     return f"{player}|{flat}"
-
 
 def load_value_table(path: str = "values.json") -> dict[str, float]:
     """Carga la tabla de valores"""
