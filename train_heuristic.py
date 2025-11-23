@@ -403,54 +403,8 @@ def evaluar_vs_heuristic(q_table: dict, oponente: HeuristicOpponentMedium, parti
 
 
 # =============================================================
-# ---------------------- GUARDADO / CARGA ---------------------
+# ---------------------- GUARDADO MODELO ----------------------
 # =============================================================
-
-def cargar_modelo_simple_a_qtable(archivo: str) -> dict[str, dict[int, dict[str, float]]]:
-    """
-    Carga un modelo en formato simple:
-
-        {
-          "estado": { "columna": Q_value, ... },
-          ...
-        }
-
-    (el formato que usa tu policy) y lo convierte a:
-
-        q_table[estado][accion] = {"Q": float, "N": int}
-
-    De esta forma, si el archivo existe, el entrenamiento continúa de forma
-    incremental sobre el conocimiento previo.
-    """
-    try:
-        with open(archivo, "r", encoding="utf-8") as f:
-            datos = json.load(f)
-    except Exception:
-        return {}
-
-    if not isinstance(datos, dict):
-        return {}
-
-    q_table: dict[str, dict[int, dict[str, float]]] = {}
-
-    for estado, acciones in datos.items():
-        if not isinstance(acciones, dict):
-            continue
-        q_table[estado] = {}
-        for a_str, q_val in acciones.items():
-            try:
-                a_int = int(a_str)
-            except Exception:
-                continue
-            try:
-                q_float = float(q_val)
-            except Exception:
-                q_float = 0.0
-            # N se inicializa en 0 porque no sabemos las visitas históricas.
-            q_table[estado][a_int] = {"Q": q_float, "N": 0}
-
-    return q_table
-
 
 def guardar_modelo_simple(q_table: dict, archivo: str) -> None:
     """
@@ -541,7 +495,7 @@ if __name__ == "__main__":
     print(f"[RUN {run_id}] Entrenando Q-learning contra HeuristicOpponentMedium...\n")
 
     # Hiperparámetros
-    episodios_totales = 4000
+    episodios_totales = 12000
     alpha = 0.1
     gamma = 0.95
     epsilon_inicial = 0.2
@@ -551,15 +505,7 @@ if __name__ == "__main__":
 
     # AHORA q_table es un diccionario de N y Q por acción:
     #   q_table[estado][accion] = {"Q": float, "N": int}
-    # Intentamos cargar conocimiento previo desde connect4_model.json
-    q_table: dict[str, dict[int, dict[str, float]]]
-    q_table = cargar_modelo_simple_a_qtable("connect4_model.json")
-    if q_table:
-        print(f"[RUN {run_id}] Se cargó modelo previo desde 'connect4_model.json' con {len(q_table)} estados.\n")
-    else:
-        print(f"[RUN {run_id}] No se encontró modelo previo o estaba vacío. Se inicia desde cero.\n")
-        q_table = {}
-
+    q_table: dict[str, dict[int, dict[str, float]]] = {}
     oponente = HeuristicOpponentMedium()
 
     recompensas_ultimos: list[float] = []
@@ -627,7 +573,6 @@ if __name__ == "__main__":
 
     # ---------------------------------------------------------
     # Guardar modelo final en el formato que usa tu policy
-    # (se sobreescribe connect4_model.json con el conocimiento acumulado)
     # ---------------------------------------------------------
     guardar_modelo_simple(q_table, "connect4_model.json")
 
