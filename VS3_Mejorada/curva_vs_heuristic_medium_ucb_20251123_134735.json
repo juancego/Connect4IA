@@ -1,0 +1,492 @@
+{
+  "metadata": {
+    "run_id": "20251123_134735",
+    "episodios_totales": 12000,
+    "paso_eval": 200,
+    "partidas_eval": 200,
+    "oponente": "HeuristicOpponentMedium",
+    "c_ucb": 1.4
+  },
+  "historial": [
+    {
+      "episodios": 200,
+      "winrate": 0.0,
+      "victorias": 0,
+      "empates": 0,
+      "derrotas": 200,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 400,
+      "winrate": 0.0,
+      "victorias": 0,
+      "empates": 0,
+      "derrotas": 200,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 600,
+      "winrate": 0.0,
+      "victorias": 0,
+      "empates": 0,
+      "derrotas": 200,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 800,
+      "winrate": 0.0,
+      "victorias": 0,
+      "empates": 0,
+      "derrotas": 200,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 1000,
+      "winrate": 0.0,
+      "victorias": 0,
+      "empates": 0,
+      "derrotas": 200,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 1200,
+      "winrate": 0.0,
+      "victorias": 0,
+      "empates": 0,
+      "derrotas": 200,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 1400,
+      "winrate": 0.0,
+      "victorias": 0,
+      "empates": 0,
+      "derrotas": 200,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 1600,
+      "winrate": 0.0,
+      "victorias": 0,
+      "empates": 0,
+      "derrotas": 200,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 1800,
+      "winrate": 0.46,
+      "victorias": 92,
+      "empates": 0,
+      "derrotas": 108,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 2000,
+      "winrate": 0.465,
+      "victorias": 93,
+      "empates": 0,
+      "derrotas": 107,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 2200,
+      "winrate": 0.445,
+      "victorias": 89,
+      "empates": 0,
+      "derrotas": 111,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 2400,
+      "winrate": 0.435,
+      "victorias": 87,
+      "empates": 0,
+      "derrotas": 113,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 2600,
+      "winrate": 0.475,
+      "victorias": 95,
+      "empates": 0,
+      "derrotas": 105,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 2800,
+      "winrate": 0.4,
+      "victorias": 80,
+      "empates": 0,
+      "derrotas": 120,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 3000,
+      "winrate": 0.485,
+      "victorias": 97,
+      "empates": 0,
+      "derrotas": 103,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 3200,
+      "winrate": 0.455,
+      "victorias": 91,
+      "empates": 0,
+      "derrotas": 109,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 3400,
+      "winrate": 0.505,
+      "victorias": 101,
+      "empates": 0,
+      "derrotas": 99,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 3600,
+      "winrate": 0.52,
+      "victorias": 104,
+      "empates": 0,
+      "derrotas": 96,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 3800,
+      "winrate": 0.535,
+      "victorias": 107,
+      "empates": 0,
+      "derrotas": 93,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 4000,
+      "winrate": 0.475,
+      "victorias": 95,
+      "empates": 0,
+      "derrotas": 105,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 4200,
+      "winrate": 0.475,
+      "victorias": 95,
+      "empates": 0,
+      "derrotas": 105,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 4400,
+      "winrate": 0.495,
+      "victorias": 99,
+      "empates": 0,
+      "derrotas": 101,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 4600,
+      "winrate": 0.505,
+      "victorias": 101,
+      "empates": 0,
+      "derrotas": 99,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 4800,
+      "winrate": 0.47,
+      "victorias": 94,
+      "empates": 0,
+      "derrotas": 106,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 5000,
+      "winrate": 0.46,
+      "victorias": 92,
+      "empates": 0,
+      "derrotas": 108,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 5200,
+      "winrate": 0.49,
+      "victorias": 98,
+      "empates": 0,
+      "derrotas": 102,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 5400,
+      "winrate": 0.565,
+      "victorias": 113,
+      "empates": 0,
+      "derrotas": 87,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 5600,
+      "winrate": 0.525,
+      "victorias": 105,
+      "empates": 0,
+      "derrotas": 95,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 5800,
+      "winrate": 0.5,
+      "victorias": 100,
+      "empates": 0,
+      "derrotas": 100,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 6000,
+      "winrate": 0.515,
+      "victorias": 103,
+      "empates": 0,
+      "derrotas": 97,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 6200,
+      "winrate": 0.505,
+      "victorias": 101,
+      "empates": 0,
+      "derrotas": 99,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 6400,
+      "winrate": 0.53,
+      "victorias": 106,
+      "empates": 0,
+      "derrotas": 94,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 6600,
+      "winrate": 0.555,
+      "victorias": 111,
+      "empates": 0,
+      "derrotas": 89,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 6800,
+      "winrate": 0.54,
+      "victorias": 108,
+      "empates": 0,
+      "derrotas": 92,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 7000,
+      "winrate": 0.515,
+      "victorias": 103,
+      "empates": 0,
+      "derrotas": 97,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 7200,
+      "winrate": 0.495,
+      "victorias": 99,
+      "empates": 0,
+      "derrotas": 101,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 7400,
+      "winrate": 0.49,
+      "victorias": 98,
+      "empates": 0,
+      "derrotas": 102,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 7600,
+      "winrate": 0.46,
+      "victorias": 92,
+      "empates": 0,
+      "derrotas": 108,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 7800,
+      "winrate": 0.52,
+      "victorias": 104,
+      "empates": 0,
+      "derrotas": 96,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 8000,
+      "winrate": 0.495,
+      "victorias": 99,
+      "empates": 0,
+      "derrotas": 101,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 8200,
+      "winrate": 0.47,
+      "victorias": 94,
+      "empates": 0,
+      "derrotas": 106,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 8400,
+      "winrate": 0.54,
+      "victorias": 108,
+      "empates": 0,
+      "derrotas": 92,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 8600,
+      "winrate": 0.555,
+      "victorias": 111,
+      "empates": 0,
+      "derrotas": 89,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 8800,
+      "winrate": 0.48,
+      "victorias": 96,
+      "empates": 0,
+      "derrotas": 104,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 9000,
+      "winrate": 0.5,
+      "victorias": 100,
+      "empates": 0,
+      "derrotas": 100,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 9200,
+      "winrate": 0.48,
+      "victorias": 96,
+      "empates": 0,
+      "derrotas": 104,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 9400,
+      "winrate": 0.545,
+      "victorias": 109,
+      "empates": 0,
+      "derrotas": 91,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 9600,
+      "winrate": 0.51,
+      "victorias": 102,
+      "empates": 0,
+      "derrotas": 98,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 9800,
+      "winrate": 0.51,
+      "victorias": 102,
+      "empates": 0,
+      "derrotas": 98,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 10000,
+      "winrate": 0.475,
+      "victorias": 95,
+      "empates": 0,
+      "derrotas": 105,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 10200,
+      "winrate": 0.495,
+      "victorias": 99,
+      "empates": 0,
+      "derrotas": 101,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 10400,
+      "winrate": 0.44,
+      "victorias": 88,
+      "empates": 0,
+      "derrotas": 112,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 10600,
+      "winrate": 0.515,
+      "victorias": 103,
+      "empates": 0,
+      "derrotas": 97,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 10800,
+      "winrate": 0.505,
+      "victorias": 101,
+      "empates": 0,
+      "derrotas": 99,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 11000,
+      "winrate": 0.58,
+      "victorias": 116,
+      "empates": 0,
+      "derrotas": 84,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 11200,
+      "winrate": 1.0,
+      "victorias": 200,
+      "empates": 0,
+      "derrotas": 0,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 11400,
+      "winrate": 1.0,
+      "victorias": 200,
+      "empates": 0,
+      "derrotas": 0,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 11600,
+      "winrate": 1.0,
+      "victorias": 200,
+      "empates": 0,
+      "derrotas": 0,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 11800,
+      "winrate": 1.0,
+      "victorias": 200,
+      "empates": 0,
+      "derrotas": 0,
+      "partidas_eval": 200
+    },
+    {
+      "episodios": 12000,
+      "winrate": 1.0,
+      "victorias": 200,
+      "empates": 0,
+      "derrotas": 0,
+      "partidas_eval": 200
+    }
+  ]
+}
